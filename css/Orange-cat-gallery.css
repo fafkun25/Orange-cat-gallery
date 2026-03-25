@@ -1,0 +1,282 @@
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #B77466;
+    width: 98.5%;
+    height: 100vh;
+    color: black;
+    font-family:monospace, Arial, sans-serif;
+    font-size: 16px;
+   
+    
+}
+
+
+.header{
+    background-color: #FFE1AF;
+    display: flex;
+    position: fixed;
+    justify-content:space-between;
+    align-items: center;
+    top: 0;
+    width: 94%;
+    padding: 10px 20px;
+    z-index: 1000;
+    border:3px dashed black;
+    border-radius: 20px;
+    transform: translateY(-100%); 
+    transition: transform 0.5s ease;
+}
+
+.header:hover {
+    transform: translateY(0);
+}
+
+.header .hover_down {
+    position: absolute;
+    bottom: 0;
+    right: -25.5%;
+    width: 30%;
+    height: 0px;
+    cursor: pointer;
+  
+}
+
+.hover_down img{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 15%;
+    image-rendering: pixelated;
+}
+
+.header .hover_down:hover{
+    transform: translateY(0);
+    
+}
+
+.icon_gif img{
+    border: 2px solid black;
+    width: 50px; 
+    height: 50px;
+    image-rendering: pixelated;
+}
+
+.header .title{
+    color: #7B542F;
+    font-size: 2vw;
+  
+}
+.nav{ 
+    margin-right: 20px;
+
+}
+li{
+    display: inline-block;
+    
+}
+
+li a{
+    background-color: #f7c8ab;
+    border: 2px solid black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-decoration: none;
+    font-size: 1.5vw;
+    color: rgb(0, 0, 0);
+    box-shadow: 1px 1px 20px white;
+    padding: 3px;
+    
+
+}
+
+
+li a:hover{
+    color: rgb(255, 255, 255);
+  
+}
+
+/* THIS IS THE BODY  */
+.content_container {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-gap: 8px;
+    font-size: 1.4vw;
+    
+}
+
+
+/* Main content 75% */
+.main_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff8e1;
+    padding: 35px 20px;
+    border-radius: 10px;
+    border: 3px solid black;
+ 
+}
+
+h1{ 
+    display: flex;
+    justify-content: center;
+    margin: auto;
+
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+h3{
+    margin-left: 40px;
+
+}
+p{
+    display: flex;
+    justify-content: center;
+    
+}
+.img01{
+    display: flex;
+    margin: auto;
+    border: 3px solid black;
+    /* max-width: 75%; */
+    width: 400px;
+    height: 400px;
+    flex-shrink: 0;
+}
+.hr{
+    margin:20px;
+    width: 80%;
+    border-radius: 10px;
+    border: 2px solid #7B542F;
+    /* width: 90%; */
+}
+
+.paw_hr{
+    margin:50px;
+}
+
+.btns{
+    display: flex;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: #ffe0b2;
+    border: 2px dotted black;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 1px 1px 20px #f6a52b;
+    transition: transform 0.30s;
+}
+.btn01:hover{
+    transform: scale(1.10);
+    background-color: #B77466;
+}
+
+.btns a{
+    text-decoration: none;
+    color: black;
+    
+
+}
+
+.all_img{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    border: 3px solid black;
+    /* max-width: 75%; */
+    width: 400px;
+    height: 400px;
+}
+
+.all_img .kuyamissy_img{
+    width: 400px;
+
+}
+
+
+/* Sidebar 25% */
+.sidebar {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffe0b2;
+    padding: 35px 20px;
+    border-radius: 10px;
+    border: 3px solid black;
+    margin-right: 8px;
+ 
+}
+
+.allpic_meme{
+    border: 3px solid black;
+    margin: auto;
+    width: 200px;
+    height: 250px;
+    
+}
+.meme01{
+    
+    width: 200px;
+    height: 250px;
+}
+
+.hr02{
+    
+    margin-top: 40px;
+    margin:20px;
+    width: 80%;
+    border-radius: 10px;
+    border: 2px solid #7B542F;
+}
+
+.meme_btn{
+    /* margin: auto; */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px;
+    transition: transform 0.30s;
+}
+
+.like_btn:hover{
+    transform:scale(1.15);
+    background-color: #FFE100;
+}
+.like_btn:focus{
+    background-color: #fff705e2;
+}
+.or_btn:hover{
+    transform: translateY(-5px);
+    background-color: #E2B59A;
+}
+.nah_btn:hover{
+    transform: translateX(50px);
+    background-color: rgb(247, 82, 82);
+}
+.nah_btn:focus{
+    background-color: #ff005de2;
+}
+
+footer{
+    display: inline-block;
+    padding: 5px 10px;
+    border: 3px dashed black;
+    background-color: #E2B59A;
+    font-size: 1.20vw;
+    
+}
+
+
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+  .content-container {
+      grid-template-columns: 100%;
+  }
+}
+
